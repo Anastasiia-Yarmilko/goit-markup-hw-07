@@ -42,12 +42,6 @@ img {
   margin-right: auto;
 }
 
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -56,6 +50,12 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .hero-btn-form {
@@ -95,11 +95,6 @@ img {
   fill: #2196f3;
 }
 
-.close-form-button:hover {
-  outline: none;
-  cursor: pointer;
-}
-
 .close-form-button {
   display: flex;
   width: 30px;
@@ -112,6 +107,11 @@ img {
   position: absolute;
   top: 8px;
   right: 8px;
+}
+
+.close-form-button:hover {
+  outline: none;
+  cursor: pointer;
 }
 
 .hero-form-field {
@@ -131,6 +131,21 @@ img {
   letter-spacing: 0.01em;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #757575;
+}
+
+.hero-form-input:focus + .hero-form-label,
+.hero-form-input:not(:placeholder-shown) + .hero-form-label {
+  color: #2196f3;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+}
+
+.hero-form-input:focus + .hero-form-label,
+.hero-form-input:not(:placeholder-shown) + .hero-form-label {
+  transform: translate(-30px, -30px);
 }
 
 .hero-form-label-svg {
@@ -164,6 +179,14 @@ img {
   outline: none;
 }
 
+.hero-form-input:hover {
+  cursor: pointer;
+}
+
+.hero-form-input:focus, .hero-form-input:not(:placeholder-shown) {
+  border-color: var(--accent-color);
+}
+
 .form-textarea {
   height: 120px;
   padding-left: 12px;
@@ -185,8 +208,6 @@ img {
   color: #757575;
 }
 
-.hero-form-input:focus + .hero-form-label,
-.hero-form-input:not(:placeholder-shown) + .hero-form-label,
 .hero-form-input:focus + .form-textarea-label,
 .hero-form-input:not(:placeholder-shown) + .form-textarea-label {
   color: #2196f3;
@@ -197,23 +218,9 @@ img {
   line-height: 1.16;
 }
 
-.hero-form-input:focus + .hero-form-label,
-.hero-form-input:not(:placeholder-shown) + .hero-form-label {
-  transform: translate(-30px, -30px);
-}
-
 .hero-form-input:focus + .form-textarea-label,
 .hero-form-input:not(:placeholder-shown) + .form-textarea-label {
   transform: translateY(-30px);
-}
-
-.hero-form-input:hover {
-  cursor: pointer;
-}
-
-.hero-form-input:focus,
-.hero-form-input:not(:placeholder-shown) {
-  border-color: #2196f3;
 }
 
 .checkbox-div {
@@ -290,9 +297,9 @@ img {
   outline: none;
 }
 
-.navigation-list-item {
-  padding-top: 32px;
-  padding-bottom: 32px;
+.navigation {
+  display: flex;
+  align-items: center;
 }
 
 .navigation-list {
@@ -300,9 +307,9 @@ img {
   padding-left: 0px;
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
+.navigation-list-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .navigation-list-item:not(:last-child) {
@@ -326,14 +333,14 @@ img {
   border-radius: 2px;
 }
 
-.logo {
-  margin-right: 85px;
-}
-
 .header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header-contacts .link {
+  color: #757575;
 }
 
 .logo,
@@ -343,6 +350,10 @@ img {
   font-size: 26px;
   line-height: 1.19;
   color: #000000;
+}
+
+.logo {
+  margin-right: 85px;
 }
 
 .logo-blue-word {
@@ -380,7 +391,6 @@ img {
   color: #2196f3;
 }
 
-.navigation-list-link,
 .header-mail,
 .header-phone {
   font-weight: 500;
@@ -390,22 +400,27 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contacts .link {
-  color: #757575;
+.navigation-list-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation-list-link:hover,
-.navigation-list-link:focus,
-.header-mail:hover,
-.header-phone:hover,
-.header-mail:focus,
-.header-phone:focus {
+.navigation-list-link:hover, .navigation-list-link:focus {
   color: #2196f3;
 }
 
 .header-mail,
 .header-phone {
   font-style: normal;
+}
+
+.header-mail:hover, .header-mail:focus,
+.header-phone:hover,
+.header-phone:focus {
+  color: #2196f3;
 }
 
 /* HERO */

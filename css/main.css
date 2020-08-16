@@ -184,7 +184,7 @@ img {
 }
 
 .hero-form-input:focus, .hero-form-input:not(:placeholder-shown) {
-  border-color: var(--accent-color);
+  border-color: #2196f3;
 }
 
 .form-textarea {

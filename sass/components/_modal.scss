@@ -142,7 +142,7 @@
 
   &:focus,
   &:not(:placeholder-shown) {
-    border-color: var(--accent-color);
+    border-color: $accent-color;
   }
 }
 

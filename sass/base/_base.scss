@@ -20,9 +20,9 @@ html {
 
 body {
   background-color: #ffffff;
-  font-family: var(--main-font);
+  font-family: $main-font;
   font-size: 14px;
-  color: var(--title-light-background-color);
+  color: $title-light-background-color;
   letter-spacing: 0.03em;
 }
 

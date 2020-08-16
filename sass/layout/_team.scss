@@ -11,7 +11,7 @@
 }
 
 .team-list-items {
-  background-color: var(--text-dark-background-color);
+  background-color: $text-dark-background-color;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
@@ -40,7 +40,7 @@
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  color: var(--text-light-background-color);
+  color: $text-light-background-color;
 }
 
 .team-address-list {
@@ -61,7 +61,7 @@
   height: 44px;
   width: 44px;
   border-radius: 50%;
-  background-color: var(--text-dark-background-color);
+  background-color: $text-dark-background-color;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -74,10 +74,10 @@
 
 .team-social-link:hover,
 .team-social-link:focus {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
 }
 
 .team-social-link:hover .team-social-icons,
 .team-social-link:focus .team-social-icons {
-  fill: var(--text-dark-background-color);
+  fill: $text-dark-background-color;
 }

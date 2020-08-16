@@ -25,13 +25,13 @@
 
 .clients-list-item-link:hover,
 .clients-list-item-link:focus {
-  fill: var(--accent-color);
-  border: 1px solid var(--accent-color);
+  fill: $accent-color;
+  border: 1px solid $accent-color;
 }
 
 .clients-list-item-link:hover .partners-icons,
 .clients-list-item-link:focus .partners-icons {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .clients-list-item:not(:last-child) {

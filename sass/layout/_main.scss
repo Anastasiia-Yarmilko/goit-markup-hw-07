@@ -55,7 +55,7 @@
 .benefits-description {
   font-weight: normal;
   line-height: 1.71;
-  color: var(--text-light-background-color);
+  color: $text-light-background-color;
 }
 
 .operations {
@@ -82,7 +82,7 @@
   text-align: center;
   left: 0;
   bottom: 0;
-  color: var(--title-dark-background-color);
+  color: $title-dark-background-color;
   width: 100%;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);

@@ -1,0 +1,117 @@
+.navigation-list-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.navigation-list {
+  display: flex;
+  padding-left: 0px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.current-main .navigation-list-link {
+  color: var(--accent-color);
+}
+
+.current-main::after {
+  position: absolute;
+  display: block;
+  content: "";
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 28px;
+  width: 47px;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
+.logo {
+  margin-right: 85px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo,
+.logo-blue-word {
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000000;
+}
+
+.logo-blue-word {
+  color: var(--accent-color);
+}
+
+.header-contacts-list {
+  display: flex;
+  padding-left: 0px;
+}
+
+.header-contacts-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.header-contacts-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.header-address-icons-svg {
+  margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-phone:hover .header-address-icons-svg,
+.header-phone:focus .header-address-icons-svg {
+  fill: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.header-mail:hover .header-address-icons-svg,
+.header-mail:focus .header-address-icons-svg {
+  fill: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.navigation-list-link,
+.header-mail,
+.header-phone {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-light-background-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contacts .link {
+  color: var(--text-light-background-color);
+}
+
+.navigation-list-link:hover,
+.navigation-list-link:focus,
+.header-mail:hover,
+.header-phone:hover,
+.header-mail:focus,
+.header-phone:focus {
+  color: var(--accent-color);
+}
+
+.header-mail,
+.header-phone {
+  font-style: normal;
+}
